@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="/images/quotation-mark (1) (1).ico" type="image/x-icon">
     <title>Quote Generator</title>
 </head>
 <body>
     <div id="container">
-        <div id="quote"> </div>
-        <div id="author"> </div>
+        <div id="quote">Hello! Want some quotes? Hit the CHANGE button below</div>
+        <div id="author">Me</div>
         <div id="sm-btn">
           <div id="sm">
-            <a href="whatsapp://send?text= data-action="share/whatsapp/share" target="_blank">
+            <a id="whatsapp" href="" data-action="share/whatsapp/share" target="_blank">
                 <img src="/images/whatsapp.png">
             </a>
-            <a href="whatsapp://send?text=" data-action="share/whatsapp/share" target="_blank">
+            <a id="twitter" href="" data-action="share/twitter/share" target="_blank">
                 <img src="/images/twitter.png">
             </a>
-            <a href="whatsapp://send?text=" data-action="share/whatsapp/share" target="_blank">
+            <a id="instagram" href="" data-action="share/instagram/share" target="_blank">
                 <img src="/images/instagram.png">
             </a>
           </div>
-          <button type="button">Change</button>
+          <button type="button" onclick="change()">Change</button>
         </div>
       </div>
       <script src="script.js"></script>

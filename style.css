@@ -4,7 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/gradienta-LeG68PrXA6Y-unsplash.jpg);
+    background-image: url(/images/gradienta-LeG68PrXA6Y-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
    }
   #container { 
     display: flex;
@@ -49,13 +53,13 @@ body {
     }
   #sm {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: stretch;
-    border: 1px solid white;
-    background: black;
+    align-items: center;
+    background: transparent;
     padding: 4px;
     border-radius: 5px;
+    min-width: 60px;
   }
   #sm-btn>button {
       background: black;

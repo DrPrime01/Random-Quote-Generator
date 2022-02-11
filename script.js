@@ -1,8 +1,9 @@
 const quote = document.getElementById("quote");
 const quoteAuthor = document.getElementById("author");
 const button = document.querySelector("button");
-
-button.addEventListener("click", change)
+let twitter = document.getElementById("twitter")
+let whatsapp = document.getElementById("whatsapp")
+let instagram = document.getElementById("instagram")
 
 let quotes = ["The greatest glory in living lies not in never falling, but in rising every time we fall",
 "The way to get started is to quit talking and begin doing.",
@@ -20,7 +21,7 @@ let authors = ["Nelson Mandela", "Walt Disney", "Steve Jobs", "Eleanor Roosevelt
 
 
 
-function change() {
+const change = function () {
     let randomQuote = Math.floor(Math.random() * quotes.length)
     let randomQuoteSelect = quotes[randomQuote];
         let author = '';
@@ -59,4 +60,11 @@ function change() {
     quote.textContent = randomQuoteSelect;
     console.log(randomQuoteSelect);
 
+    let twitterAttr = `https://twitter.com/intent/tweet?text=+${randomQuoteSelect} \n ${author}`
+        twitter.setAttribute("href", twitterAttr)
+    let whatsappAttr = `whatsapp://send?text=+${randomQuoteSelect} \n ${author}`
+        whatsapp.setAttribute("href", whatsappAttr)
+    
 }
+
+change();
