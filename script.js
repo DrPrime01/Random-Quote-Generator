@@ -60,9 +60,9 @@ const change = function () {
     quote.textContent = randomQuoteSelect;
     console.log(randomQuoteSelect);
 
-    let twitterAttr = `https://twitter.com/intent/tweet?text=+${randomQuoteSelect} \n ${author}`
+    let twitterAttr = `https://twitter.com/intent/tweet?text=+${randomQuoteSelect} \n ${author} \n \n Share! Let others find their favorite quote too \n https://drprime01.github.io/random-quote-generator/`
         twitter.setAttribute("href", twitterAttr)
-    let whatsappAttr = `whatsapp://send?text=+${randomQuoteSelect} \n ${author}`
+    let whatsappAttr = `whatsapp://send?text=+ ${randomQuoteSelect} \n ~ ${author} \n \n Share! Let others find their favorite quote too \n https://drprime01.github.io/random-quote-generator/`
         whatsapp.setAttribute("href", whatsappAttr)
     
 }
